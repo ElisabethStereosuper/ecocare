@@ -6,7 +6,7 @@ wp-cli
 .sass-cache
 .sass-cache/*
 node_modules/**
-.ddev
+.ddev/**
 /*.php
 wp-content/languages
 wp-content/plugins
