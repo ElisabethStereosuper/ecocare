@@ -1,4 +1,4 @@
-*.codekit
+ecocare.sql.gz
 wp-cli
 .DS_Store
 *.DS_Store
@@ -12,6 +12,8 @@ wp-content/languages
 wp-content/plugins
 wp-content/upgrade
 wp-content/uploads
+wp-content/cache
+wp-content/ewww
 wp-content/*.php
 wp-admin/**
 wp-includes/**
