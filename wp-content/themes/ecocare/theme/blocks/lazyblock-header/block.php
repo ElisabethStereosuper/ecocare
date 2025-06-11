@@ -1,5 +1,5 @@
 <?php if ( isset( $attributes['button'] ) && isset( $attributes['link'] ) ) : ?>
-	<a href="<?php echo $attributes['link']; ?>" title="<?php echo $attributes['button']; ?>" class="inline-flex text-background bg-primary hover:bg-secondary hover:-translate-y-1 focus:bg-foreground rounded-lg px-6 py-3 transition my-5 sm:my-0 sm:ml-5 font-semibold">
+	<a href="<?php echo $attributes['link']; ?>" title="<?php echo $attributes['button']; ?>" class="inline-flex text-background bg-primary hover:bg-secondary hover:-translate-y-[2px] hover:text-foreground focus:bg-tertiary rounded-lg px-6 py-3 transition my-5 sm:my-0 sm:ml-5 font-semibold">
 		<?php echo $attributes['button']; ?>
 	</a>
 <?php endif; ?>

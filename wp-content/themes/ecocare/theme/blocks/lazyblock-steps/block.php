@@ -15,8 +15,8 @@
 		<ul class="md:w-[45%] p-0 list-none text-left">
 			<?php $count = 0; foreach($attributes['steps'] as $step): ?>
 				<li data-aos="eco-scroll" class="my-7">
-					<div class="bg-secondary text-primary rounded-lg text-background py-8 px-6">
-						<h3 class="text-xl m-0">
+					<div class="bg-tertiary text-foreground rounded-lg text-background py-8 px-6">
+						<h3 class="text-xl mt-0">
 							<span class="block text-4xl">0<?php $count++; echo $count; ?>.</span>
 							<span><?php echo esc_html( $step['title'] ); ?></span>
 						</h3>

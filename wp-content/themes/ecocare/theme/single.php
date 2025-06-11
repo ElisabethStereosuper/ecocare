@@ -22,7 +22,8 @@ get_header();
 						<div class="not-prose absolute top-0 left-0 bg-foreground w-full h-full opacity-30"></div>
 					</header><!-- .entry-header -->
 
-					<div class="entry-content max-w-4xl mx-auto px-8">
+					<!-- max-w-4xl mx-auto px-8 -->
+					<div class="entry-content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
 

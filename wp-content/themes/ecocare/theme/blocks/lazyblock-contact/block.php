@@ -17,7 +17,7 @@
 
 ?>
 
-<div data-aos="eco-scroll" data-aos-offset="400" class="inline-block lg:max-w-[360px] lg:-mt-35 bg-secondary px-12 pt-14 pb-17 text-primary rounded-lg text-left">
+<div data-aos="eco-scroll" data-aos-offset="100" class="inline-block lg:max-w-[360px] lg:-mt-35 bg-secondary px-12 pt-14 pb-8 text-primary rounded-lg text-left">
 	<h2 class="block text-3xl font-bold mb-7"><?php echo $attributes['title'] ?></h2>
 	<?php if ( isset( $attributes['text'] ) ) : ?>
 		<p class="mb-7 text-sm"><?php echo $attributes['text']; ?></p>
@@ -27,12 +27,27 @@
 		<ul class="not-prose">
 			<?php foreach($attributes['links'] as $link): ?>
 			<li>
-				<a class="group not-prose font-semibold flex mb-4 hover:text-foreground transition" href="<?php echo $link['link']; ?>" title="<?php echo $link['label']; ?>">
+				<a class="group not-prose font-semibold flex mb-4 hover:text-foreground transition" href="<?php echo $link['link']; ?>" title="<?php echo $link['label']; ?>" target="_blank">
 					<?php echo $icons[ $link['icon'] ]; ?>
 					<span class="group-hover:-translate-x-1 transition"><?php echo $link['label']; ?></span>
 				</a>
 			</li>
 			<?php endforeach; ?>
 		</ul>
+	<?php endif; ?>
+
+	<?php if ( isset( $attributes['social'] ) ) : ?>
+		<div class="flex items-center mt-10">
+			<span class="mr-3">Follow us:</span>
+			<ul class="flex not-prose text-tertiary">
+				<?php foreach($attributes['social'] as $social): ?>
+				<li class="mr-2">
+					<a class="w-[35px] h-[35px] leading-[35px] text-center rounded-full bg-foreground not-prose font-semibold block text-lg hover:bg-primary hover:text-secondary transition" href="<?php echo $social['link']; ?>" title="<?php echo $social['label']; ?>" target="_blank">
+						<?php echo $social['label']; ?>
+					</a>
+				</li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
 	<?php endif; ?>
 </div>

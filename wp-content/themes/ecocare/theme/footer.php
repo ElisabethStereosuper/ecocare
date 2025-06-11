@@ -13,11 +13,11 @@
 
 </main><!-- #content -->
 
-	<footer class="pt-15 pb-5 mt-50 bg-primary text-white font-extralight text-center md:text-left">
+	<footer class="pt-15 pb-5 mt-50 bg-primary text-white font-extralight text-center lg:text-left">
 
 		<div class="container">
 
-			<div class="md:flex justify-between items-center lg:items-end flex-wrap">
+			<div class="lg:flex justify-between items-center lg:items-end flex-wrap">
 				<div>
 					<a class="-mt-6" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img class="inline" width="30" src="<?php echo get_template_directory_uri().'/images/ecocare-small.png'; ?>" alt="<?php bloginfo( 'name' ); ?>">
@@ -41,7 +41,7 @@
 					</nav>
 				<?php endif; ?>
 
-				<div class="items-end md:pl-5 mt-10 md:text-right font-semibold">
+				<div class="items-end lg:pl-5 mt-10 lg:text-right font-semibold">
 					<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 						<div class="-mb-5">
 							<?php dynamic_sidebar( 'sidebar-1' ); ?>

@@ -1,22 +1,22 @@
 <?php if ( isset( $attributes['image']['url'] ) ) : ?>
 
-<div class="lazy-img sm:flex items-start lg:items-end my-20 lg:my-15 lg:mb-30 <?php if ( $attributes['image-alignement'] == 'right' ) echo 'text-right'; ?>">
+<div class="lazy-img lg:flex items-start lg:items-end my-20 lg:my-15 lg:mb-30 <?php if ( $attributes['image-alignement'] == 'right' ) echo 'text-right'; ?>">
 	<div data-aos="eco-scroll" class="<?php
 		echo ( $attributes['image-alignement'] == 'right' ) ? 'order-2 rounded-bl-none ' : 'rounded-br-none ';
 		if ( $attributes['image-big'] ) echo 'lg:min-w-[50%]';
-	?> hidden sm:block min-w-[35%] aspect-square bg-hero bg-no-repeat bg-cover bg-center rounded-[200px]" style="background-image: url('<?php echo wp_get_attachment_image_url( $attributes['image']['id'], 'large' ); ?>')"></div>
+	?> hidden lg:block min-w-[35%] aspect-square bg-hero bg-no-repeat bg-cover bg-center rounded-[200px]" style="background-image: url('<?php echo wp_get_attachment_image_url( $attributes['image']['id'], 'large' ); ?>')"></div>
 	
 	<div class="px-8">
 	<?php if ( isset( $attributes['title'] ) ) : ?>
 		<?php if ( $attributes['hero-homepage'] ) : ?>
 			<h1>
 				<span data-aos="eco-scroll" data-aos-delay="250" class="block mb-2 text-3xl font-normal"><?php echo esc_html( $attributes['title'] ); ?></span>
-				<span data-aos="eco-scroll" data-aos-delay="300" class="block"><?php echo esc_html( $attributes['title2'] ); ?></span>
+				<span data-aos="eco-scroll" data-aos-delay="300" class="block"><?php echo str_replace("\n", '<br />',  $attributes['title2']); ?></span>
 			</h1>
 		<?php else: ?>
 			<h2>
 				<span data-aos="eco-scroll" data-aos-delay="250" class="block mb-2 text-3xl font-normal"><?php echo esc_html( $attributes['title'] ); ?></span>
-				<span data-aos="eco-scroll" data-aos-delay="300" class="block"><?php echo esc_html( $attributes['title2'] ); ?></span>
+				<span data-aos="eco-scroll" data-aos-delay="300" class="block"><?php echo str_replace("\n", '<br />',  $attributes['title2']); ?></span>
 			</h2>
 		<?php endif; ?>
 
