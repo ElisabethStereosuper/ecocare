@@ -1,12 +1,12 @@
 <?php if ( isset( $attributes['image']['url'] ) ) : ?>
 
-<div class="lazy-img lg:flex items-start lg:items-end my-20 lg:my-15 lg:mb-30 <?php if ( $attributes['image-alignement'] == 'right' ) echo 'text-right'; ?>">
+<div class="lazy-img lg:flex items-start lg:items-end mt-10 lg:my-20 lg:my-15 lg:mb-30 <?php if ( $attributes['image-alignement'] == 'right' ) echo 'lg:text-right'; ?>">
 	<div data-aos="eco-scroll" class="<?php
 		echo ( $attributes['image-alignement'] == 'right' ) ? 'order-2 rounded-bl-none ' : 'rounded-br-none ';
 		if ( $attributes['image-big'] ) echo 'lg:min-w-[50%]';
 	?> hidden lg:block min-w-[35%] aspect-square bg-hero bg-no-repeat bg-cover bg-center rounded-[200px]" style="background-image: url('<?php echo wp_get_attachment_image_url( $attributes['image']['id'], 'large' ); ?>')"></div>
 	
-	<div class="px-8">
+	<div class="md:px-8">
 	<?php if ( isset( $attributes['title'] ) ) : ?>
 		<?php if ( $attributes['hero-homepage'] ) : ?>
 			<h1>
@@ -37,7 +37,7 @@
 			<?php if ( isset( $attributes['counter1'] ) && $attributes['counter1'] != '' ) : ?>
 				<div data-aos-id="counter" data-aos="eco-scroll" data-aos-delay="850" class="w-[50%] text-sm">
 					<p class="inline-block max-w-[200px]">
-						<span data-count="<?php echo $attributes['counter1']; ?>" class="counter block text-4xl font-semibold">1</span>
+						<span data-count="<?php echo $attributes['counter1']; ?>" class="counter block text-4xl font-semibold">1000</span>
 						<?php echo $attributes['counter1-label']; ?>
 					</p>
 				</div>
@@ -46,7 +46,7 @@
 			<?php if ( isset( $attributes['counter2'] ) && $attributes['counter2'] != '' ) : ?>
 				<div data-aos-id="counter" data-aos="eco-scroll" data-aos-delay="950" class="w-[50%] text-sm">
 					<p class="inline-block max-w-[200px]">
-						<span data-count="<?php echo $attributes['counter2']; ?>" class="counter block text-4xl font-semibold">1</span>
+						<span data-count="<?php echo $attributes['counter2']; ?>" class="counter block text-4xl font-semibold">1000</span>
 						<?php echo $attributes['counter2-label']; ?>
 					</p>
 				</div>

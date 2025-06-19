@@ -12,14 +12,15 @@
 import AOS from 'aos';
 
 
-const burger = document.getElementById('burger')
-const menu = document.getElementById('menu')
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+//const counters = e.detail.querySelector('.counter');
 
 
 const animate = counter => {
     const value = +counter.dataset.count,
       data = +counter.innerText,
-      time = value / 700;
+      time = value / 1000;
     if (data < value) {
         counter.innerText = Math.ceil(data + time);
         setTimeout(() => animate(counter), 1);
@@ -30,18 +31,18 @@ const animate = counter => {
 
 const loadHandler = () => {
     AOS.init({
-      duration: 450,
-      easing: 'ease-in-out',
-      delay: 100,
-      disable: 'mobile',
-      once: true,
-      offset: 0
+        duration: 450,
+        easing: 'ease-in-out',
+        delay: 100,
+        //disable: 'mobile',
+        once: true,
+        offset: 0
     });
 
     burger.addEventListener('click', toggleMenu);
     
-    document.addEventListener('aos:in:counter', function(e) {
-        var counter = e.detail.querySelector('.counter');
+    document.addEventListener('aos:in:counter', e => {
+        let counter = e.detail.querySelector('.counter');
         if( counter ) animate(counter);
     });
 }

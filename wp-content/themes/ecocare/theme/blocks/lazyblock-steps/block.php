@@ -1,5 +1,5 @@
 <?php if ( isset( $attributes['steps'] ) ) : ?>
-	<div class="md:flex justify-between items-center mt-30 mb-10">
+	<div class="md:flex justify-between items-center lg:mt-30 mb-10 mt-20">
 		<div class="md:w-[50%]">
 			<?php if ( isset( $attributes['title'] ) ) : ?>
 				<h2 class="lg:mr-15 xl:mr-20">

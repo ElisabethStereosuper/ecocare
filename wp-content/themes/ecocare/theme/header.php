@@ -41,15 +41,12 @@
 		[data-aos="eco-scroll"].aos-animate {
 			opacity: 1;
 		}
-		@media screen and (min-width: 768px) {
-			[data-aos="eco-scroll"]{
-				transform: translate3d(0, 70px, 0);
-			}
+		[data-aos="eco-scroll"]{
+			transform: translate3d(0, 70px, 0);
+		}
 			
-
-			[data-aos="eco-scroll"].aos-animate {
-				transform: translate3d(0, 0, 0);
-			}
+		[data-aos="eco-scroll"].aos-animate {
+			transform: translate3d(0, 0, 0);
 		}
 	</style>
 </head>

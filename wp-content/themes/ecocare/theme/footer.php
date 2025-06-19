@@ -13,7 +13,7 @@
 
 </main><!-- #content -->
 
-	<footer class="pt-15 pb-5 mt-50 bg-primary text-white font-extralight text-center lg:text-left">
+	<footer class="pt-15 pb-5 mt-30 bg-primary text-white font-extralight text-center lg:text-left">
 
 		<div class="container">
 
