@@ -156,6 +156,7 @@ add_action( 'widgets_init', 'ecocare_widgets_init' );
  */
 function ecocare_scripts() {
 	wp_enqueue_style( 'ecocare-style', get_stylesheet_uri(), array(), ECOCARE_VERSION );
+	wp_enqueue_style( 'ecocare-aos', get_template_directory_uri() . '/aos.css', array(), ECOCARE_VERSION );
 	wp_enqueue_script( 'ecocare-script', get_template_directory_uri() . '/js/script.min.js', array(), ECOCARE_VERSION, true );
 
 	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
